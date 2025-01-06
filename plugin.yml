@@ -1,0 +1,15 @@
+name: QR
+main: SoyDavs\QRPlugin\QRPlugin
+version: 1.0.0
+api: [5.0.0]
+commands:
+  qrcode:
+    description: Generate a QR code on a map
+    usage: /qrcode <text>
+    permission: qrplugin.command.qrcode
+permissions:
+  qrplugin.command.qrcode:
+    description: Allows the player to use the /qrcode command
+    default: true
+depend: 
+  - ImageOnMap
